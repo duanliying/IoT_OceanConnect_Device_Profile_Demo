@@ -1,0 +1,92 @@
+{
+	"services": [
+		{
+			"serviceType":"Battery",
+			"description": "Battery",
+			"commands": [
+                {
+                    "commandName": "SET_REPORT_PERIOD_BATTERY",
+                    "paras": [
+                        {
+                            "paraName": "Period",
+                            "dataType": "int",
+                            "required": true,
+                            "min": 0,
+                            "max": 200,
+                            "step": 1,
+                            "maxLength": 10,
+                            "unit": null,
+                            "enumList": null
+                        }
+                    ],
+                    "responses": [
+                        {
+                            "responseName": "SET_REPORT_PERIOD_BATTERY_RSP",
+                            "paras": [
+                                {
+                                    "paraName": "result",
+                                    "dataType": "int",
+                                    "required": true,
+                                    "min": -1000000,
+                                    "max": 1000000,
+                                    "step": 1,
+                                    "maxLength": 10,
+                                    "unit": null,
+                                    "enumList": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+				{
+                    "commandName": "LOW_BATTERY_WARNING",
+                    "paras": [
+                        {
+                            "paraName": "Value",
+                            "dataType": "int",
+                            "required": true,
+                            "min": 0,
+                            "max": 200,
+                            "step": 1,
+                            "maxLength": 10,
+                            "unit": null,
+                            "enumList": null
+                        }
+                    ],
+                    "responses": [
+                        {
+                            "responseName": "LOW_BATTERY_WARNING_RSP",
+                            "paras": [
+                                {
+                                    "paraName": "result",
+                                    "dataType": "int",
+                                    "required": true,
+                                    "min": -1000000,
+                                    "max": 1000000,
+                                    "step": 1,
+                                    "maxLength": 10,
+                                    "unit": null,
+                                    "enumList": null
+                                }
+                            ]
+                        }
+                    ]
+                }
+			],
+			"properties":[
+				{
+					"propertyName": "BatteryCur",
+					"dataType": "int",
+					"required":true,
+					"min":0,
+					"max":100,
+					"step":1,
+					"maxLength":null,
+					"method":"R",
+					"unit":"%",
+					"enumList":null
+				}
+			]
+		}
+	]
+}

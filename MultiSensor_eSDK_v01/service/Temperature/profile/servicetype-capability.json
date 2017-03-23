@@ -1,0 +1,116 @@
+{
+	"services": [
+		{
+			"serviceType":"Temperature",
+			"description": "Temperature",
+			"commands": [
+                {
+                    "commandName": "SET_REPORT_PERIOD_TEMPERATURE",
+                    "paras": [
+                        {
+                            "paraName": "Period",
+                            "dataType": "int",
+                            "required": true,
+                            "min": 0,
+                            "max": 200,
+                            "step": 1,
+                            "maxLength": 10,
+                            "unit": null,
+                            "enumList": null
+                        }
+                    ],
+                    "responses": [
+                        {
+                            "responseName": "SET_REPORT_PERIOD_TEMPERATURE_RSP",
+                            "paras": [
+                                {
+                                    "paraName": "result",
+                                    "dataType": "int",
+                                    "required": true,
+                                    "min": -1000000,
+                                    "max": 1000000,
+                                    "step": 1,
+                                    "maxLength": 10,
+                                    "unit": null,
+                                    "enumList": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+				{
+                    "commandName": "HIGH_TEMPERATURE_WARNING",
+                    "paras": [
+                        {
+                            "paraName": "Value",
+                            "dataType": "int",
+                            "required": true,
+                            "min": 0,
+                            "max": 200,
+                            "step": 1,
+                            "maxLength": 10,
+                            "unit": null,
+                            "enumList": null
+                        }
+                    ],
+                    "responses": [
+                        {
+                            "responseName": "HIGH_TEMPERATURE_WARNING_RSP",
+                            "paras": [
+                                {
+                                    "paraName": "result",
+                                    "dataType": "int",
+                                    "required": true,
+                                    "min": -1000000,
+                                    "max": 1000000,
+                                    "step": 1,
+                                    "maxLength": 10,
+                                    "unit": null,
+                                    "enumList": null
+                                }
+                            ]
+                        }
+                    ]
+                }
+			],
+			"properties":[
+				{
+					"propertyName": "TemperatureCur",
+					"dataType": "int",
+					"required":true,
+					"min":0,
+					"max":100,
+					"step":1,
+					"maxLength":null,
+					"method":"R",
+					"unit":"%",
+					"enumList":null
+				},
+				{
+					"propertyName": "TemperatureMaxToday",
+					"dataType": "int",
+					"required":true,
+					"min":0,
+					"max":100,
+					"step":1,
+					"maxLength":null,
+					"method":"R",
+					"unit":"%",
+					"enumList":null
+				},
+				{
+					"propertyName": "TemperatureMinToday",
+					"dataType": "int",
+					"required":true,
+					"min":0,
+					"max":100,
+					"step":1,
+					"maxLength":null,
+					"method":"R",
+					"unit":"%",
+					"enumList":null
+				}
+			]
+		}
+	]
+}

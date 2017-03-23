@@ -14,10 +14,11 @@ Device Profile，即设备描述文件，是开发者上传到华为物联网平
 		* 温度、湿度和电量都包含2个命令：
 			* 设置上报周期
 			* 预警命令
-* YourDeviceType\_ManufacturerId\_v01
+* RawDataDevice\_eSDK\_v02
 	* 透传模式下的设备描述文件；
 	* 不推荐使用，建议仅在NB-IoT方案的调通阶段尝试；
-	* 仅包含一个服务RawData。
+	* 仅包含一个服务RawData；
+	* 开发者可以对ManufacturerId、ManufacturerName、Model、DeviceType进行自定义修改。
 
 上传的设备描述文件需为zip压缩包格式，压缩包名应为[deviceType]\_[manufacturerId]\_[model].zip的格式。
 

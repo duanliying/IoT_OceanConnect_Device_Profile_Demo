@@ -1,0 +1,28 @@
+{
+    "devices": [
+        {
+            "manufacturerId": "eSDK",
+            "manufacturerName": "eSDK_Huawei",
+            "model": "v01",
+            "protocolType": "CoAP",
+            "deviceType": "MultiSensor",
+            "serviceTypeCapabilities": [
+				{
+                    "serviceId": "Humidity",
+                    "serviceType": "Humidity",
+                    "option": "Master"
+                },
+				{
+                    "serviceId": "Temperature",
+                    "serviceType": "Temperature",
+                    "option": "Master"
+                },
+				{
+                    "serviceId": "Battery",
+                    "serviceType": "Battery",
+                    "option": "Master"
+                }
+            ]
+        }
+    ]
+}

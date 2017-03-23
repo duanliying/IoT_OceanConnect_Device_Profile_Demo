@@ -1,0 +1,18 @@
+{
+    "devices": [
+        {
+            "manufacturerId": "eSDK",
+            "manufacturerName": "eSDK Huawei",
+            "model": "v02",
+            "protocolType": "CoAP",
+            "deviceType": "RawDataDevice",
+            "serviceTypeCapabilities": [
+				{
+                    "serviceId": "RawData",
+                    "serviceType": "RawData",
+                    "option": "Master"
+                }
+            ]
+        }
+    ]
+}

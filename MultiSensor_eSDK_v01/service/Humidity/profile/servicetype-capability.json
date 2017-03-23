@@ -1,0 +1,116 @@
+{
+	"services": [
+		{
+			"serviceType":"Humidity",
+			"description": "Humidity",
+			"commands": [
+                {
+                    "commandName": "SET_REPORT_PERIOD_HUMIDITY",
+                    "paras": [
+                        {
+                            "paraName": "Period",
+                            "dataType": "int",
+                            "required": true,
+                            "min": 0,
+                            "max": 200,
+                            "step": 1,
+                            "maxLength": 10,
+                            "unit": null,
+                            "enumList": null
+                        }
+                    ],
+                    "responses": [
+                        {
+                            "responseName": "SET_REPORT_PERIOD_HUMIDITY_RSP",
+                            "paras": [
+                                {
+                                    "paraName": "result",
+                                    "dataType": "int",
+                                    "required": true,
+                                    "min": -1000000,
+                                    "max": 1000000,
+                                    "step": 1,
+                                    "maxLength": 10,
+                                    "unit": null,
+                                    "enumList": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+				{
+                    "commandName": "HIGH_HUMIDITY_WARNING",
+                    "paras": [
+                        {
+                            "paraName": "Value",
+                            "dataType": "int",
+                            "required": true,
+                            "min": 0,
+                            "max": 200,
+                            "step": 1,
+                            "maxLength": 10,
+                            "unit": null,
+                            "enumList": null
+                        }
+                    ],
+                    "responses": [
+                        {
+                            "responseName": "HIGH_HUMIDITY_WARNING_RSP",
+                            "paras": [
+                                {
+                                    "paraName": "result",
+                                    "dataType": "int",
+                                    "required": true,
+                                    "min": -1000000,
+                                    "max": 1000000,
+                                    "step": 1,
+                                    "maxLength": 10,
+                                    "unit": null,
+                                    "enumList": null
+                                }
+                            ]
+                        }
+                    ]
+                }
+			],
+			"properties":[
+				{
+					"propertyName": "HumidityCur",
+					"dataType": "int",
+					"required":true,
+					"min":0,
+					"max":100,
+					"step":1,
+					"maxLength":null,
+					"method":"R",
+					"unit":"%",
+					"enumList":null
+				},
+				{
+					"propertyName": "HumidityMinToday",
+					"dataType": "int",
+					"required":true,
+					"min":0,
+					"max":100,
+					"step":1,
+					"maxLength":null,
+					"method":"R",
+					"unit":"%",
+					"enumList":null
+				},
+				{
+					"propertyName": "HumidityMaxToday",
+					"dataType": "int",
+					"required":true,
+					"min":0,
+					"max":100,
+					"step":1,
+					"maxLength":null,
+					"method":"R",
+					"unit":"%",
+					"enumList":null
+				}
+			]
+		}
+	]
+}

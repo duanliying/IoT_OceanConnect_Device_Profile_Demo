@@ -1,0 +1,28 @@
+{
+    "devices": [
+        {
+            "manufacturerId": "Huawei",
+            "manufacturerName": "Huawei",
+            "model": "v1001",
+            "protocolType": "CoAP",
+            "deviceType": "WaterMeter",
+            "serviceTypeCapabilities": [
+				{
+                    "serviceId": "Electricity",
+                    "serviceType": "Electricity",
+                    "option": "Optional"
+                },
+                {
+				    "serviceId": "WaterMeter",
+                    "serviceType": "WaterMeter",
+                    "option": "Master"
+                },
+				{
+                    "serviceId": "WaterMeterAlarm",
+                    "serviceType": "WaterMeterAlarm",
+                    "option": "Mandatory"
+                }
+            ]
+        }
+    ]
+}

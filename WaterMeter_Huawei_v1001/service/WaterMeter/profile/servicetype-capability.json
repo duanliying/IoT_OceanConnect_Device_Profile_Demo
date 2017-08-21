@@ -1,0 +1,94 @@
+{
+	"services": [
+		{
+			"serviceType": "WaterMeter",
+			"description": "WaterMeter",
+			"commands": [
+                {
+                    "commandName": "SET_METER_REPORT",
+                    "paras": [
+                        {
+                            "paraName": "content",
+                            "dataType": "string",
+                            "required": true,
+                            "min": 0,
+                            "max": 0,
+                            "step": 0,
+                            "maxLength": 1024,
+                            "unit": null,
+                            "enumList": null
+                        }
+                    ],
+                    "responses": [
+                        {
+                            "responseName": "SET_METER_REPORT_RSP",
+                            "paras": [
+                                {
+                                    "paraName": "content",
+                                    "dataType": "string",
+                                    "required": true,
+                                    "min": 0,
+                                    "max": 0,
+                                    "step": 0,
+                                    "maxLength": 1024,
+                                    "unit": null,
+                                    "enumList": null
+                                }
+                            ]
+                        }
+                    ]
+                }
+			],
+			"properties": [           
+             	{
+                    "propertyName": "deviceAddress",
+                    "dataType": "string",
+                    "required": true,
+                    "min": 0,
+                    "max": 0,
+                    "step": 0,
+                    "maxLength": 255,
+                    "method": "RE",
+                    "unit": null,
+                    "enumList": null
+                },                    
+                {
+                    "propertyName": "signalStrength",
+                    "dataType": "string",
+                    "required": true,
+                    "min": 0,
+                    "max": 100,
+                    "step": 0,
+                    "maxLength": 10,
+                    "method": "RE",
+                    "unit": null,
+                    "enumList": null
+                },
+                {
+                    "propertyName": "currentReading",
+                    "dataType": "string",
+                    "required": true,
+                    "min": 0,
+                    "max": 0,
+                    "step": 0,
+                    "maxLength": 255,
+                    "method": "RE",
+                    "unit": null,
+                    "enumList": null
+                },
+                {
+                    "propertyName": "flowRateReading",
+                    "dataType": "string",
+                    "required": true,
+                    "min": 0,
+                    "max": 0,
+                    "step": 0,
+                    "maxLength": 255,
+                    "method": "RE",
+                    "unit": null,
+                    "enumList": null
+                }  
+			]	
+		}
+	]
+}

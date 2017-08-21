@@ -1,0 +1,70 @@
+{
+    "services": [
+        {
+            "serviceType": "WaterMeterAlarm",
+            "description": "WaterMeterAlarm",
+            "commands": [
+                {
+                    "commandName": "SET_HIGHFLOW_ALARM",
+                    "paras": [
+                        {
+                            "paraName": "highFlow",
+                            "dataType": "int",
+                            "required": true,
+                            "min": 1,
+                            "max": 0,
+                            "step": 1,
+                            "maxLength": 10,
+                            "unit": "L",
+                            "enumList": null
+                        }
+                    ],
+                    "responses": [
+                        {
+                            "responseName": "SET_HIGHFLOW_ALARM_RSP",
+                            "paras": [
+                                {
+                                    "paraName": "result",
+                                    "dataType": "int",
+                                    "required": true,
+                                    "min": -1000000,
+                                    "max": 1000000,
+                                    "step": 1,
+                                    "maxLength": 10,
+                                    "unit": null,
+                                    "enumList": null
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "properties": [
+                {
+                    "propertyName": "lowFlowAlarm",
+                    "dataType": "int",
+                    "required": true,
+                    "min": 0,
+                    "max": 1,
+                    "step": 1,
+                    "maxLength": 0,
+                    "method": "RE",
+                    "unit": null,
+                    "enumList": null
+                },
+                {
+                    "propertyName": "highFlowAlarm",
+                    "dataType": "int",
+                    "required": true,
+                    "min": 0,
+                    "max": 1,
+                    "step": 1,
+                    "maxLength": 0,
+                    "method": "RE",
+                    "unit": null,
+                    "enumList": null
+                }
+            ]
+        }
+    ]
+}
